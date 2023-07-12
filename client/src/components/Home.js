@@ -52,7 +52,7 @@ function Home() {
         <h1 className="text-center">Welcome to Sanghamitra Quiz App</h1>
 
         <div className="jumbotron text-center my-5">
-          <h2>Ready to Test Your Knowledge?</h2>
+          <h2>Ready to Test Your Knowledge Vaibhav?</h2>
           <a className="btn btn-primary btn-lg mt-3" href="/quiz" role="button">
             Start Quiz
           </a>
