@@ -1,13 +1,13 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
+require("dotenv").config();
 
 const app = express();
 app.use(express.json());
 app.use(cors());
 
-const dbURI =
-  "mongodb+srv://kapilwankhede2204:0GufORnJeKAvtG8A@quizz.dsnaknj.mongodb.net/quizz";
+const dbURI = process.env.DB_URI;
 
 mongoose
   .connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
